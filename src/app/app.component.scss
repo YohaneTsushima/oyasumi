@@ -1,5 +1,5 @@
 :host {
-    text-align: center;
+    text-align: left;
 }
 nz-header,
 nz-footer {
@@ -8,13 +8,14 @@ nz-footer {
 }
 
 nz-footer {
-	line-height: 1.5;
+	line-height: 0.5;
 }
 
 nz-sider {
-	background: #3ba0e9;
+	background: #ffffff;
 	color: #fff;
-	
+	line-height: 0.5;
+	padding: 10px;
 }
 
 nz-layout {
