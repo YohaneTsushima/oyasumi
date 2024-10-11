@@ -1,5 +1,4 @@
 <!-- NG-ZORRO -->
-
 <nz-layout>
   <nz-sider [nzWidth]="240">
     <img nz-image
@@ -17,13 +16,13 @@
     <br>
     <h3><a [routerLink]="['/']">oyasumi(回首页)</a></h3>
     <br>
-    <ul nz-menu nzMode="inline" [nzTheme]="dark ? 'dark' : 'light'" style="height: 600px; overflow: scroll; line-height: 1;">
+    <ul nz-menu nzMode="inline" [nzTheme]="dark ? 'dark' : 'light'" style="height: 500px; overflow: scroll; line-height: 1;">
       <li nz-submenu nzTitle="管理" [nzOpen]="true">
         <ul class="manage">
           <li nz-menu-item><a [routerLink]="['/', 'management', 'payment']">新人导览&付款</a></li>
-          <li nz-menu-item>关于订单页</li>
-          <li nz-menu-item>关于发货</li>
-          <li nz-menu-item>关于机票</li>
+          <li nz-menu-item><a [routerLink]="['/', 'management', 'ordering']">关于订单页</a></li>
+          <li nz-menu-item><a [routerLink]="['/', 'management', 'delivery']">关于发货</a></li>
+          <!-- <li nz-menu-item>关于机票</li>
           <li nz-menu-item>关于竞拍商品</li>
           <li nz-menu-item>关于群昵称ID规定</li>
           <li nz-menu-item>关于小型包装物</li>
@@ -32,17 +31,15 @@
           <li nz-menu-item>汇率log</li>
           <li nz-menu-item>日本国内运费</li>
           <li nz-menu-item>国内运费</li>
-          <li nz-menu-item>oyasumi</li>
+          <li nz-menu-item>oyasumi</li> -->
         </ul>
       
       <li nz-menu-item>profile</li>
     </ul>
   </nz-sider>
   <nz-layout>
-    <nz-header>Header</nz-header>
     <nz-content>
       <router-outlet />
     </nz-content>
-    <nz-footer>Footer</nz-footer>
   </nz-layout>
 </nz-layout>
