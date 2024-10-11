@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { BtnComponent } from './btn/btn.component';
@@ -29,9 +29,18 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'oyasumi';
   theme = false;
   mode: boolean = false;
   dark: boolean = true;
+
+  ngOnInit(): void {
+    console.log('');
+  }
+  ngOnDestroy(): void {
+    console.log('');
+  } 
 }
+
+

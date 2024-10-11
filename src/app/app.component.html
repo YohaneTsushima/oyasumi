@@ -14,11 +14,13 @@
     <ng-template #unCheckedTemplate><span nz-icon nzType="close"></span></ng-template>
     
     <br>
-    <h3>oyasumi</h3>
+    <br>
+    <h3><a [routerLink]="['/']">oyasumi(回首页)</a></h3>
+    <br>
     <ul nz-menu nzMode="inline" [nzTheme]="dark ? 'dark' : 'light'" style="height: 600px; overflow: scroll; line-height: 1;">
       <li nz-submenu nzTitle="管理" [nzOpen]="true">
         <ul class="manage">
-          <li nz-menu-item><a [routerLink]="['/', 'management', 'payment']">付款</a></li>
+          <li nz-menu-item><a [routerLink]="['/', 'management', 'payment']">新人导览&付款</a></li>
           <li nz-menu-item>关于订单页</li>
           <li nz-menu-item>关于发货</li>
           <li nz-menu-item>关于机票</li>

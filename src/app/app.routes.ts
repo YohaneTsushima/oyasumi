@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { HostListener, NgModule, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 export const routes: Routes = [{
@@ -19,4 +19,15 @@ export const routes: Routes = [{
     })],
     exports: [RouterModule]
   })
-  export class AppRoutingModule { }
+  export class AppRoutingModule implements OnInit, OnDestroy {
+
+    ngOnInit(): void {
+      debugger
+      console.log('你好.');
+      
+    }
+    ngOnDestroy(): void {
+      console.log('');
+    } 
+
+  }
